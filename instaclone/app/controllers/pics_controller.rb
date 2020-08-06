@@ -41,7 +41,7 @@ class PicsController < ApplicationController
 
   def upvote
     @pic.upvote_by current_user
-    redirect_to pic_path
+    redirect_to root_path
   end
 
   private
